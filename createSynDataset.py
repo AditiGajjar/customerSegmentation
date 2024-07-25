@@ -32,8 +32,8 @@ def generate_customers(num_customers):
         customers.append(customer)
     return pd.DataFrame(customers)
 
-# Generate 1,000,000 synthetic customers
-num_customers = 1000000
+# Generate 900,000 synthetic customers
+num_customers = 900000
 df_customers = generate_customers(num_customers)
 # save to a file
 df_customers.to_csv('synthetic_customers.csv', index=False)
